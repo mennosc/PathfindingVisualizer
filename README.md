@@ -28,3 +28,5 @@ There are 5 methods of grid traversal:
 - Breadth-first Search: Grid traversal by looking at all neighbors of the starting nodes, then checking their neighbors etc.
 - Depth-first Search: Grid traversal by exhausting neighbors in the same direction
 
+# Visualization
+When an algorithm is selected and walls have been drawn, the visualization can start. The blue nodes represent the nodes that have been visited by the algorithm in order to find a path. This pattern is different for all algorithms. When the end node has been found, a yellow line will appear. This line is the shortest (or least weighing) path from the start to the end.  
