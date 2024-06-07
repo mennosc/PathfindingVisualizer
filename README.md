@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# Pathfinding Visualizer
+To try out this project:
+ - Make sure node.js is installed on your machine. check out <a href="https://nodejs.org/en/download/source-code">this</a> link if you don't have it installed. 
+- Download this project locally or use git clone.
+- Open the terminal/powershell and navigate to the downloaded folder and 
+- Type in the following commands:
+  ```npm install```
+  ```npm start```
+  This will succesfully launch the program
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ![alt text](image.png)
 
-## Available Scripts
+# How does it work?
+The arrow on the left denotes the start node, and the target on the right denotes the end node. If you drag the mouse over the grad and hold the mouse button down, it will place walls. These walls are obstacles for the pathfinding algorithms and the algorithms can't get through them.  
 
-In the project directory, you can run:
+# Obstacle generation
+There are 4 methods of generating obstacles:
+- Recursive Division. Used to generate a maze
+- Basic Random Maze. Used to generate walls randomly
+- Basic Weight Maze. Used to generate random weights for the weighted algorithms
+- Simple Stair Pattern. Used to generate a diagonal line of walls.
 
-### `npm start`
+# Algorithms
+There are 5 methods of grid traversal:
+- Dijkstra's Algorithm: Most often used in graph problems, but it can be extended to work on grids
+- A* Search: Really smart algorithm that solves mazes quickly
+- Greedy Best-first Search: A greedy approach that works towards the end goal
+- Breadth-first Search: Grid traversal by looking at all neighbors of the starting nodes, then checking their neighbors etc.
+- Depth-first Search: Grid traversal by exhausting neighbors in the same direction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
