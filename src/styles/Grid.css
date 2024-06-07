@@ -1,0 +1,28 @@
+body {
+    overflow-x: hidden;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+td {
+    width: 25px;
+    height: 25px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+
+#algorithm-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}

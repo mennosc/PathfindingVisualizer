@@ -1,0 +1,68 @@
+.tools div {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top: 0.0em;
+    margin: 0 0.42em;
+}
+
+.start {
+    background: url('../icons/triangletwo-right.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+.target {
+    background: url('../icons/circle.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.object {
+    background: url('../icons/diamond.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.weight {
+    background: url('../icons/weight.svg') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.unvisited {
+    background-color: white;
+    border: 1px solid rgb(176,216,248);
+}
+
+.visited-blue {
+    background-color: rgb(91,206,227);
+    border: 1px solid rgb(176,216,248);
+}
+
+.visited-purple {
+    background-color: #C66AFF;
+    border: 1px solid rgb(176,216,248);
+}
+
+.shortest-path {
+    background-color: #FFFB6A;
+    border: 1px solid rgb(176,216,248);
+}
+
+.wall-node {
+    background-color: rgb(12,53,71);
+    border: 1px solid rgb(176,216,248);
+}
+
+.div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tool-item {
+    list-style-type: none;
+    display: flex;
+}
